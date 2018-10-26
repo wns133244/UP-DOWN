@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post"
+        enctype="multipart/form-data">
+        <input type="file" name="my_file" multiple>
+        // name이 없으면 데이터 전송이 안됨.
+        <br>
+        <input type="submit">
+        {% csrf_token %}
+    </form>
+</body>
+</html>
